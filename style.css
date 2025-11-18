@@ -1,128 +1,124 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --bg-color: #020617;
-    --accent: 236 72 153; /* RGB for pink glow */
-    --glass: rgba(255,255,255,0.06);
+
+body {
+    height: 100vh;
+    width: 100%;
 }
 
-body{
-    min-height: 100vh; /* avoid issues on mobile address bars */
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--bg-color);
-    color: #fff;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+.bg {
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    z-index: 0;
 }
-nav{
+
+/* nav bar */
+nav {
+
     display: flex;
     top: 20px;
-    position: absolute;
+    left: 110px;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     width: 80%;
-    background-color: #807e7e32;
-    backdrop-filter: blur(5px);
+    background-color: #807e7e00;
+    backdrop-filter: blur(3px);
     border-radius: 20px;
     color: white;
     box-shadow: #ffffff 0 0 3px;
+    z-index: 1;
 
 }
-nav .name{
+
+nav .name a {
     font-size: 24px;
-  font-family: "Dancing Script", cursive;
+    text-decoration: none;
+    color: #ffffff;
+    list-style: none;
     font-weight: bold;
 }
-nav .name:hover{
-    color: #ff5733;
-}
-nav ul{
+
+nav ul {
     justify-content: space-evenly;
     list-style: none;
     display: flex;
     gap: 20px;
 }
-nav ul li a{
+
+nav ul li a {
+    padding: 15px;
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: 500;
+    border-radius: 20px;
+    transition: 0.1s ease-in;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
+    height: 60px;
+    width: 80px;
+    background: linear-gradient(#007e898e, #002a488e);
     color: #ffffff;
-    text-shadow: #ff5733 0 0 19px;
+    box-shadow: #006e76b2 0 0 10px;
 }
 
-/* Hero / background container */
-.bg{
-    position: relative;
-    width: 100%;
-    min-height: 100vh; /* grow if content expands */
-    overflow: hidden; /* keeps decorative glow from producing scrollbars */
-    background: linear-gradient(180deg, rgba(2,6,23,1) 0%, rgba(2,6,23,1) 100%);
-    display: flex;
-    align-items: center; /* center hero content vertically */
-    justify-content: center;
-}
+/* nav bar ends */
 
-/* Decorative glow layers. Use pointer-events:none so they don't interfere with interactions. Use viewport-relative sizing for responsiveness. */
-.inBg{
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(circle at 50% 10vh, rgba(var(--accent) / 0.35) 0 20vmin, transparent 40vmin),
-        radial-gradient(circle at 10% 70%, rgba(0,150,255,0.08) 0 12vmin, transparent 30vmin);
-    transform: translateZ(0); /* promote to its own layer for smoother compositing */
-}
 
-/* Main hero content stacked above decorative layers */
-.main{
-    position: relative;
-    z-index: 1;
-    max-width: 1100px;
-    padding: clamp(2rem, 5vw, 4rem);
-    text-align: center;
-}
 
-.container{
-    width: min(92%, 1100px);
-    margin-inline: auto;
-}
 
-/* Headings & text */
-.main h1{
-    font-size: clamp(1.6rem, 4vw, 3.2rem);
-    line-height: 1.05;
-    margin-bottom: 0.75rem;
-}
-.main p{
-    color: #d6d6d6;
-    font-size: clamp(0.95rem, 1.6vw, 1.15rem);
-}
 
-/* Ensure nav sits above everything */
-nav{ z-index: 3; left: 50%; transform: translateX(-50%); }
 
-/* Responsive tweaks */
-@media (max-width: 640px){
-    nav{ width: calc(100% - 32px); padding: 12px; border-radius: 12px; }
-    nav .name{ font-size: 20px; }
-    nav ul{ gap: 12px; }
-}
 
-/* Small accessibility helpers */
-.invisible{
-    position: absolute!important;
-    left: -9999px!important;
-    top: auto!important;
-    width: 1px!important;
-    height: 1px!important;
-    overflow: hidden!important;
+
+@media screen and (max-width: 425px) {
+
+    .bg1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* nav bar */
+    nav {
+        display: flex;
+        top: 20px;
+        left: 20px;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        background-color: #807e7e00;
+        backdrop-filter: blur(3px);
+        border-radius: 20px;
+        color: white;
+        box-shadow: #ffffff 0 0 3px;
+
+    }
+
+    nav ul li a {
+        font-size: 08px;
+    }
+
+    /* nav bar ends */
+
+
+
+
+
+
+
+
 }
