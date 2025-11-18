@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,8 @@
 body {
     align-items: center;
     justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
     height: 100vh;
     width: 100%;
 }
@@ -66,104 +70,145 @@ nav ul li a {
 nav ul li a:hover {
     height: 60px;
     width: 80px;
-    background: linear-gradient(#007e898e, #3d00488e);
+    background: linear-gradient(#aa06b37b, #9f21b68e);
     color: #ffffff;
-    box-shadow: #006e76b2 0 0 10px;
+    box-shadow: #aa08b6bf 0 0 10px;
 }
 
 /* nav bar ends */
 
 /* main */
-.main{
+.main {
     position: absolute;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    z-index:20;
-    /* background: #8d1a1a; */
+    z-index: 20;
     color: #ffffff;
     margin-top: 200px;
     margin-left: 70px;
 }
-h4{
+
+h4 {
     padding-top: 9px;
     padding-left: 17px;
     color: rgb(255, 255, 255);
 }
-#wd{
+
+#wd {
     padding: 12px;
     font-size: 64px;
-    color: rgb(164, 14, 191);
-    text-shadow: #00aaff 0 0 10px;
+    color: rgb(99, 0, 101);
+    text-shadow: #6e0169 0 0 10px;
 }
-#para{
+
+#para {
     padding-top: 4px;
     padding-left: 20px;
     gap: 4px;
 }
+
 .fade-in {
-  opacity: 0;
-  transform: translateY(6px);
-  animation: fadeIn 5.4s ease-out forwards; 
+    opacity: 0;
+    transform: translateY(6px);
+    animation: fadeIn 3.4s ease-out forwards;
 }
 
 /* Accessible: skip animation for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .fade-in { animation: none; opacity: 1; transform: none; }
+    .fade-in {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.main .logos{
+
+.main .logos {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 18px;
-    padding: 10px;
-    /* background: #0ea9ae47; */
+    align-items: left;
+    /* justify-content: space-between; */
+    margin: 20px;
+    margin-left: 17px;
+    gap: 27px;
     width: 400px;
-    height: 64px; 
+    height: 64px;
 }
-.git{
-    height: 60px;
-    width: 60px;
+
+.git {
+    height: 40px;
+    width: 40px;
     z-index: 42;
     border-radius: 50%;
     background-image: url(github.png);
     background-size: cover;
 }
-.linkdin{
 
-    height: 60px;
-    width: 60px;
+
+.linkdin {
+
+    height: 40px;
+    width: 40px;
     z-index: 42;
     border-radius: 50%;
     background-image: url(linkedin.png);
     background-size: cover;
 }
-.insta{
-    height: 60px;
-    width: 60px;
+
+.insta {
+    height: 40px;
+    width: 40px;
     z-index: 42;
     border-radius: 50%;
     background-image: url(instagram.png);
     background-size: cover;
 }
-.wttsp{
-    height: 60px;
-    width: 60px;
+
+.wttsp {
+    height: 40px;
+    width: 40px;
     z-index: 42;
     border-radius: 50%;
     background-image: url(whatsapp.png);
     background-size: cover;
 }
+#fade-in {
+    opacity: 0;
+    transform: translateY(6px);
+    animation: fadeIn 5.4s ease-out forwards;
+}
 
+/* Accessible: skip animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
 
-
-
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media screen and (max-width: 425px) {
 
@@ -202,34 +247,37 @@ h4{
     /* nav bar ends */
 
 
-/* main */
-.main{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    z-index: 10;
-    color: #ffffff;
-    margin-top: 200px;
-    margin-left: 11px;
-}
-h4{
-    padding: 9px;
-    padding-left: 12px;
-    color: rgb(255, 255, 255);
-}
-.wd{
-    padding: 12px;
-    font-size: 64px;
-    color: rgb(14, 191, 179);
-    text-shadow: #00aaff 0 0 10px;
-}
-span #para{
-    padding: 4px;
-    padding-left: 7px;
-    gap: 4px;
-    font-style: oblique;
-}
+    /* main */
+    .main {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        z-index: 10;
+        color: #ffffff;
+        margin-top: 200px;
+        margin-left: 11px;
+    }
+
+    h4 {
+        padding: 9px;
+        padding-left: 12px;
+        color: rgb(255, 255, 255);
+    }
+
+    .wd {
+        padding: 12px;
+        font-size: 64px;
+        color: rgb(14, 191, 179);
+        text-shadow: #00aaff 0 0 10px;
+    }
+
+    span #para {
+        padding: 4px;
+        padding-left: 7px;
+        gap: 4px;
+        font-style: oblique;
+    }
 
 
 

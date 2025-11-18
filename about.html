@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .bg {
+            height: 100vh;
+            width: 100%;
+            background: #00000081;
+            position: fixed;
+            z-index: 0;
+        }
+
+        /* nav bar */
+        nav {
+
+            display: flex;
+            top: 20px;
+            left: 110px;
+            position: fixed;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 80%;
+            background-color: #807e7e00;
+            backdrop-filter: blur(3px);
+            border-radius: 20px;
+            color: white;
+            box-shadow: #ffffff 0 0 3px;
+            z-index: 1;
+
+        }
+
+        nav .name a {
+            font-size: 24px;
+            text-decoration: none;
+            color: #ffffff;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        nav ul {
+            justify-content: space-evenly;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 20px;
+            transition: 0.1s ease-in;
+        }
+
+        nav ul li a:hover {
+            height: 60px;
+            width: 80px;
+            background: linear-gradient(#aa06b37b, #9f21b68e);
+            color: #ffffff;
+            box-shadow: #aa08b6bf 0 0 10px;
+        }
+
+        /* nav bar ends */
+
+        #main {
+            position: absolute;
+            z-index: 54;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            top: 110px;
+            left: 66px;
+        }
+        /* .fade-in {
+    opacity: 0;
+    transform: translateY(6px);
+    animation: fadeIn 0.9s ease-out forwards;
+} */
+
+/* Accessible: skip animation for users who prefer reduced motion */
+/* @media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+
+        .one {
+            width: 650px;
+            height: 590px;
+            background: #ebe9e913;
+            backdrop-filter: blur(7px);
+            border-radius: 30px;
+
+        }
+
+        .tt {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .two{
+
+            width: 550px;
+            height: 360px;
+            background: #ebe9e913;
+            backdrop-filter: blur(7px);
+            border-radius: 30px;
+        }
+        .three{
+
+            width: 550px;
+            height: 220px;
+            background: #ebe9e913;
+            backdrop-filter: blur(7px);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="bg">
+        <!-- <iframe src='https://my.spline.design/cybermannequin-eZ9Yh2rp5jWtWIo72kNT5KLT/' frameborder='0' width='100%'
+            height='100%'></iframe> -->
+        <iframe src='https:///my.spline.design/cybernetichuman-n6TGGOjbKyaZNNPfo20tQfzU/' frameborder='0' width='100%'
+            height='100%'></iframe>
+    </div>
+    <!-- bg done -->
+
+
+    <!-- naviation bar -->
+    <nav>
+        <span class="name"><a href="index.html"> AS </a></span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- nav bar ends -->
+
+
+
+    <!-- div 1 -->
+
+    <div id="main" class="fade-in">
+        <div class="one"></div>
+        <div class="tt">
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
