@@ -111,7 +111,7 @@ h4 {
 .fade-in {
     opacity: 0;
     transform: translateY(6px);
-    animation: fadeIn 3.4s ease-out forwards;
+    animation: fadeIn 2.2s ease-out forwards;
 }
 
 /* Accessible: skip animation for users who prefer reduced motion */
@@ -210,6 +210,25 @@ h4 {
     }
 }
 
+
+
+
+.cover{
+    height: 33px;
+    width: 150px;
+    top: 682px;
+    left: 1245px;
+    padding: 3px;
+    padding-left: 19px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.243);
+    font-size: x-large;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    background: #9710bc4e;
+}
+
 @media screen and (max-width: 425px) {
 
     .bg1 {
@@ -278,10 +297,5 @@ h4 {
         gap: 4px;
         font-style: oblique;
     }
-
-
-
-
-
 
 }

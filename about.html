@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@333&display=swap" rel="stylesheet">
     <title>Document</title>
 
     <!-- style -->
@@ -86,6 +89,10 @@
 
         /* nav bar ends */
 
+        body {
+            justify-content: center;
+        }
+
         #main {
             position: absolute;
             z-index: 54;
@@ -94,42 +101,80 @@
             align-items: center;
             justify-content: center;
             top: 110px;
-            left: 66px;
+            left: 90px;
         }
-        /* .fade-in {
-    opacity: 0;
-    transform: translateY(6px);
-    animation: fadeIn 0.9s ease-out forwards;
-} */
-
-/* Accessible: skip animation for users who prefer reduced motion */
-/* @media (prefers-reduced-motion: reduce) {
-    .fade-in {
-        animation: none;
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(6px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
-
 
         .one {
             width: 650px;
             height: 590px;
             background: #ebe9e913;
+            display: flex;
+            overflow: hidden;
             backdrop-filter: blur(7px);
             border-radius: 30px;
+
+        }
+
+        .PIC1 {
+            height: 510px;
+            width: 300px;
+            border-radius: 30px;
+            position: absolute;
+            margin-top: 120px;
+            margin-left: 330px;
+            background-image: url(MY.png);
+            background-size: cover;
+            z-index: 11;
+        }
+
+        .PIC2 {
+            height: 690px;
+            width: 390px;
+            position: absolute;
+            margin-top: -90px;
+            margin-left: 90px;
+            background-image: url(PIC2.png);
+            background-size: cover;
+            z-index: 14;
+        }
+
+        .PIC3 {
+            height: 430px;
+            width: 300px;
+            border-radius: 30px;
+            position: absolute;
+            margin-top: 190px;
+            margin-left: 0px;
+            background-image: url(PIC3.png);
+            background-size: cover;
+            z-index: 11;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            color: #95009d;
+        }
+
+        .txt {
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 100px;
+            font-weight: bolder;
+            text-align: center;
+            z-index: 10;
+            text-shadow: #cb00ac77 0 0 9px;
+        }
+
+        .txt1 {
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+            z-index: 10;
+            text-shadow: #cb00ac77 0 0 9px;
+
 
         }
 
@@ -138,24 +183,140 @@
             flex-direction: column;
             gap: 10px;
         }
-        .two{
 
+        .two {
+            color: #ffffff;
             width: 550px;
             height: 360px;
+            gap: 20px;
+            padding: 20px;
             background: #ebe9e913;
             backdrop-filter: blur(7px);
             border-radius: 30px;
         }
-        .three{
+
+        .three {
 
             width: 550px;
             height: 220px;
+            padding: 10px;
+            padding-left: 20px;
+            color: aliceblue;
             background: #ebe9e913;
             backdrop-filter: blur(7px);
             border-radius: 30px;
         }
+
+        .edu {
+            /* padding: 20px; */
+            padding-bottom: 19px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blue {
+            color: #ff0080;
+            font-weight: bolder;
+            text-shadow: #ce62d4 0 0 3px;
+        }
+
+        .blue1 {
+            margin-top: 50px;
+            color: #ff0080;
+            font-size: x-large;
+            font-weight: bolder;
+            text-shadow: #ce62d4 0 0 3px;
+        }
+
+        .ICONS {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+        .i1 {
+
+            height: 40px;
+            width: 40px;
+            z-index: 42;
+            /* border-radius: 50%; */
+            background-image: url(js.png);
+            background-size: cover;
+            box-shadow: #ffffff 0 0 9px;
+            
+        }
+        .i2 {
+
+            height: 40px;
+            width: 40px;
+            z-index: 42;
+            /* border-radius: 50%; */
+            background-image: url(css.png);
+            background-size: cover;
+        }
+        .i3 {
+
+            height: 40px;
+            width: 40px;
+            z-index: 42;
+            /* border-radius: 50%; */
+            background-image: url(c.png);
+            background-size: cover;
+        }
+        .i4 {
+
+            height: 40px;
+            width: 40px;
+            z-index: 42;
+            /* border-radius: 50%; */
+            background-image: url(c++.png);
+            background-size: cover;
+        }
+        .i5 {
+
+            height: 40px;
+            width: 40px;
+            z-index: 42;
+            /* border-radius: 50%; */
+            background-image: url(html.png);
+            background-size: cover;
+        }
+
+
+        #fade-in {
+            opacity: 0;
+            transform: translateY(6px);
+            animation: fadeIn 2.4s ease-out forwards;
+        }
+
+        /* Accessible: skip animation for users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in {
+                animation: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
+
+
+
+
+
+
 
 <body>
 
@@ -171,7 +332,7 @@
 
     <!-- naviation bar -->
     <nav>
-        <span class="name"><a href="index.html"> AS </a></span>
+        <span class="name"><a href="index.html"> <b>AS</b> </a></span>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -185,11 +346,54 @@
 
     <!-- div 1 -->
 
-    <div id="main" class="fade-in">
-        <div class="one"></div>
+    <div id="main">
+        <div class="one" id="fade-in">
+            <div class="PIC1"></div>
+            <div class="PIC2"></div>
+            <div class="PIC3"></div>
+            <div class="text">
+                <span class="txt1">Hello ,<br></span>
+                <span class="txt">here Ansh...!!</span>
+            </div>
+        </div>
         <div class="tt">
-            <div class="two"></div>
-            <div class="three"></div>
+            <div class="two" id="fade-in">
+                <p>
+                    A BCA student at Chitkara University who finds <br>inspiration in every corner of the digital and
+                    creative world.<br><br>
+                    Whether I’m designing imaginative websites, <br>getting lost in the joy of DIY creations, or
+                    experimenting in the kitchen, <br><br>I love turning ideas into something real.<br>
+                    Curiosity drives me forward—I’m always exploring new technologies, learning new skills, and
+                    discovering fresh ways to express creativity in everything I do.
+                </p>
+                <span class="blue1">
+                    Skills
+                </span>
+                <div class="ICONS">
+                    <div class="i1"></div>
+                    <div class="i2"></div>
+                    <div class="i3"></div>
+                    <div class="i4"></div>
+                    <div class="i5"></div>
+                </div>
+            </div>
+            <div class="three" id="fade-in">
+
+                <div class="edu">
+                    <h2><span class="blue">Edudation</span></h2>
+                    <span class="class"> 10th Standard<br>Murlidhar D.A.V. Public School
+                        (2021-22)<br>
+                        <span class="blue">Percentage: 70%</span></span>
+                    <span class="class"> 12thStandard<br>Murlidhar D.A.V. Public School
+                        (2021-22)<br>
+                        <span class="blue">Percentage: 83%</span></span>
+                    <span class="class"> BCA<br>
+                        Chitkara University
+                        (2024-27)<br>
+                        <span class="blue">CGPA: 9.87 (2nd year)</span>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
